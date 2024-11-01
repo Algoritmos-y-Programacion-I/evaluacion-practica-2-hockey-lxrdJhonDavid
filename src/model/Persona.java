@@ -1,9 +1,10 @@
 package model;
 
-public  Persona {
-     String nombre;
-     int edad;
+public abstract class Persona {
+    protected String nombre; // Cambiado a protected
+    protected int edad; // Cambiado a protected
 
+    // Constructor que inicializa nombre y edad
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
@@ -24,5 +25,4 @@ public  Persona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
 }
